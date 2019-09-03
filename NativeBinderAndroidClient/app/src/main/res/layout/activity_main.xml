@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_sendData"
+        android:onClick="setData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置数据"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/bt_getData"
+        android:onClick="getData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="读取数据"
+        app:layout_constraintTop_toBottomOf="@+id/bt_sendData"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/bt_testCallBack"
+        android:onClick="testCallBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试回调"
+        app:layout_constraintTop_toBottomOf="@+id/bt_getData"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</android.support.constraint.ConstraintLayout>
